@@ -1,0 +1,18 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 60%;
+    height: 60%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

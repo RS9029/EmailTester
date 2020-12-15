@@ -32,6 +32,7 @@ app.post('/',urlencodedParser,(req,res)=>{
             <li>Name: ${req.body.name}</li>
             <li>Email: ${req.body.email}</li>
             <li>Phone Number: ${req.body.phoneNumber}</li>
+            <li>Message: ${req.body.message}</li>
         </ul>
     `;
 
@@ -62,9 +63,10 @@ app.post('/',urlencodedParser,(req,res)=>{
             return(console.log(error));
         }
         console.log(`Message was sent: ${info.messageId}`);
+        res.redirect('/sent');
     })
     
-    res.redirect('/sent');
+    
 })
 
 app.listen(process.env.PORT||5000, ()=>{

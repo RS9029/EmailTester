@@ -6,13 +6,34 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(156, 188, 240);
 }
 
 form{
     width: 60%;
-    height: 60%;
-    background-color: aqua;
+    height: auto;
+    padding: 4rem 0rem;
+    background-color: rgb(84, 138, 209);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+input,textarea,button{
+    width: 50%;
+    margin: 1rem 0rem;
+}
+
+input, button{
+    height: 3rem;
+}
+
+textarea{
+    height: 10rem;
+}
+
+.subhead{
+    font: bold 30px sans-serif;
+}
+
